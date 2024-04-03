@@ -6,3 +6,21 @@ Content-Type: application/json
     "details": "Um evento para quem é apaixonado por programação.",
     "maximumAttendees": 100
 }
+
+###
+
+POST http://localhost:3333/events/ef125559-9dd0-4e0e-b7fd-7860cb79a06b/attendee
+Content-Type: application/json
+
+{
+    "name": "Neander de Souza Faria",
+    "email": "neander.faria@hotmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/ef125559-9dd0-4e0e-b7fd-7860cb79a06b
+
+### 
+
+GET http://localhost:3333/attendees/12/badge
